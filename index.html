@@ -18,12 +18,12 @@
             </div>
             <div class="score">
                 <p>SCORE</p>
-                <h1>0</h1>
+                <h1></h1>
             </div>
         </div>
         <div class="hands">
             <div class="paper">
-                <img src="assets/Paper.png" alt="" onclick="pickUserHand('paper')">
+                <img  src="assets/Paper.png" alt="" onclick="pickUserHand('paper')">
             </div>
             <div class="scissors">
                 <img src="assets/Scissors.png" onclick="pickUserHand('scissors')">
@@ -36,14 +36,14 @@
             <div class="userhand">
                 <h1>YOU PICKED</h1>
                 <div class="handImageContainer">
-                    <img src="assets/Paper.png" alt="">
+                    <img id='userPickImage' src="assets/Paper.png" alt="">
                 </div>
                 
             </div>
             <div class="referee">
                 <div class="decision">
                     <h1>YOU WIN</h1>
-                    <div class="newGame">
+                    <div onclick="restartGame()" class="newGame">
                         PLAY AGAIN
                     </div>
                 </div>
@@ -51,7 +51,7 @@
             <div class="computerHand">
                 <h1>THE BOT PICKED</h1>
                 <div class="handImageContainer">
-                    <img src="assets/Rock.png" alt="">
+                    <img id='botPickImage' src="assets/Rock.png" alt="">
                 </div>
             </div>
         </div>
